@@ -102,3 +102,15 @@ Feel free to fork, use, or suggest improvements!
 │   ├── SkinThickness_hist.png
 │   ├── SkinThickness_fixed.png
 │   └── tree_structure.jpg
+
+📌 Update on June 20, 2025
+Added full SHAP-based model interpretation pipeline (model_shap_interpretation.py), covering 7 classification models: Logistic Regression, Decision Tree, Random Forest, XGBoost, LightGBM, SVM, and ANN.
+
+Automatically generates SHAP bar plots and beeswarm plots for feature importance visualization.
+
+For each model, the script samples 50 test samples and uses either TreeExplainer or KernelExplainer based on model type.
+
+SHAP scatter plots, waterfall plots, and force plots are structured in the code, but currently only bar and beeswarm plots are generated successfully.
+
+This module will be further refined as actual debugging issues arise.
+
